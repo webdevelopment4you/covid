@@ -1,3 +1,5 @@
+let info = document.getElementById("detailsInfo");
+
 fetch("https://api.covid19india.org/data.json").then( (response) => {
 
     return response.json();
@@ -30,7 +32,7 @@ fetch("https://api.covid19india.org/data.json").then( (response) => {
             `
                 <tr>
                 <th scope="row">${counter+1}</th>
-                <td><a id=${cases.state} onclick = "getDistrictData(this.id)">${cases.state}</a></td>
+                <td ><a id=${cases.state} onclick = "getDistrictData(this.id)" class="stateAnim">${cases.state}</a></td>
                 <td>${cases.active}</td>
                 <td>${cases.confirmed}</td>
                 </tr>
@@ -40,6 +42,7 @@ fetch("https://api.covid19india.org/data.json").then( (response) => {
 
     }
 
+    info.style.display = "block";
     tableBody.innerHTML = tableContent;
 
     
@@ -48,6 +51,8 @@ fetch("https://api.covid19india.org/data.json").then( (response) => {
 
 
 function getDistrictData(id){
+
+    info.style.display = "none";
 
     let stateName = document.getElementById(id).innerText;
     
