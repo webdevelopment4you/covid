@@ -61,6 +61,19 @@ footer
     border-bottom: 1px solid;
 }
 
+.rowWrap
+{
+    flex-wrap: wrap-reverse;
+}
+
+@media screen and (max-width:768px)
+{
+    .wrapper1
+    {
+        margin-top:15px;
+    }
+}
+
 @media screen and (max-width:540px)
 {
     #casesContainer
@@ -76,6 +89,8 @@ footer
         font-size: 10px;
     }
 }
+
+
 
 @media screen and (max-width:290px)
 {
