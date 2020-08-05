@@ -8,6 +8,20 @@ a
     cursor: pointer;
 }
 
+.moreAnchor
+{
+    border: 1px solid black;
+    padding: 5px 5px;
+    transition: 0.4s;
+}
+
+.moreAnchor:hover
+{
+    border: 1px solid #6c63ff;
+    background-color: #6c63ff;
+    color:#fff !important;
+}
+
 #casesContainer
 {
     overflow-x: hidden;
@@ -71,6 +85,38 @@ footer
 .rowWrap
 {
     flex-wrap: wrap-reverse;
+}
+
+.centerMe
+{
+    text-align: center;
+}
+
+.medicalRow
+{
+    margin-top:40px;
+}
+
+#stateHeading
+{
+    display:block;
+    width:100%;
+}
+
+.parameter
+{
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+#deaths
+{
+    color:#ff0000;
+}
+
+#recovered
+{
+    color:green;
 }
 
 @media screen and (max-width:768px)
