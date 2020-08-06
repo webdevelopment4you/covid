@@ -8,6 +8,16 @@ a
     cursor: pointer;
 }
 
+nav a
+{
+    color:rgb(80, 75, 75) !important;
+}
+
+nav a:hover
+{
+    color:#000 !important;
+}
+
 .moreAnchor
 {
     border: 1px solid black;
@@ -117,6 +127,11 @@ footer
 #recovered
 {
     color:green;
+}
+
+#updated
+{
+    color:#1eb99c;
 }
 
 @media screen and (max-width:768px)

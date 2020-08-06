@@ -116,7 +116,7 @@ function getDistrictData(id = stateName) {
 
                 // console.log(data[stateName][districtData][place]);
 
-                if (data[stateName][districtData][place].active != undefined) {
+                if (data[stateName][districtData][place].active != undefined && place != "Unknown") {
                     tableContent +=
                         `
                                     <tr>
@@ -182,11 +182,24 @@ function getIndividualStateData() {
                 let confirmed = document.getElementById("confirmedValue");
                 let deaths = document.getElementById("deathsValue");
                 let recovered = document.getElementById("recoveredValue");
+                let updated = document.getElementById("updated");
+                let note = document.getElementById("noteValue");
+
 
                 active.innerText = `${state.active}`;
                 confirmed.innerText = `${state.confirmed}`;
                 deaths.innerText = `${state.deaths}`;
                 recovered.innerText = `${state.recovered}`;
+
+                if(state.statenotes != "")
+                {
+                    note.innerText = `${state.statenotes}`
+                }
+                else
+                {
+                    note.innerText = `No additional information`;
+                }
+                updated.innerText = `Last updated on : ${state.lastupdatedtime}`;
 
 
             }
