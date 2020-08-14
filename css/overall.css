@@ -7,3 +7,9 @@ body
 {
     text-align: right;
 }
+
+.jumbotron
+{
+    background-color: #32BABC;
+    color:#fff;
+}

@@ -18,6 +18,16 @@ nav a:hover
     color:#000 !important;
 }
 
+.bg-light
+{
+    background-image: linear-gradient(270deg, #138808 33%, #ffffff 33%, #ffffff 66%, #FF9933 66% );
+}
+
+.navbar-brand img
+{
+    border: 1px solid #000;
+}
+
 .moreAnchor
 {
     border: 1px solid black;
@@ -134,12 +144,21 @@ footer
     color:#1eb99c;
 }
 
+@media screen and (max-width:992px)
+{
+    nav li
+    {
+        text-align:center;
+    }
+}
+
 @media screen and (max-width:768px)
 {
     .wrapper1
     {
         margin-top:15px;
     }
+
 }
 
 @media screen and (max-width:540px)
@@ -148,6 +167,8 @@ footer
     {
         font-size: 14px;
     }
+
+
 }
 
 @media screen and (max-width:356px)
