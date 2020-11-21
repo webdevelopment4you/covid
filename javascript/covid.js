@@ -4,6 +4,9 @@ let detailsContainer = document.getElementById("detailsContainer");
 let backButtonFunction = true;
 let tableHead = document.getElementById("tableHead");
 
+//CHART
+
+
 detailsContainer.style.display = "none";
 
 
@@ -201,11 +204,29 @@ function getIndividualStateData() {
                 }
                 updated.innerText = `Last updated on : ${state.lastupdatedtime}`;
 
+                
+                
+                // let myData = new Chart(myChart2, {
+
+                //     type:"pie",
+                //     data:{
+        
+                //         labels:["Active", "Confirmed", "Deceased", "Recovered"],
+        
+                //         datasets:[{
+                //             label: "Chart Description",
+                //             data:[state.active, state.confirmed, state.deaths, state.recovered],
+                //             backgroundColor:["orange", "violet", "red", "green"]
+                //         }]
+        
+                //     },
+        
+                //     options:{}
+        
+                // })
 
             }
         }
-
-
 
     })
 }
